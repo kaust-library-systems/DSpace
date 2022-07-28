@@ -80,4 +80,4 @@ COPY dspace/src/main/docker/test/rest_web.xml $DSPACE_INSTALL/webapps/rest/WEB-I
 RUN sed -i -e "s|\${dspace.dir}|$DSPACE_INSTALL|" $DSPACE_INSTALL/webapps/rest/WEB-INF/web.xml
 
 # KAUST ORCID authority configuration
-COPY KAUST/dspace.cfg $DSPACE_INSTALL/config/dspace.cfg
+COPY KAUST/dspace.cfg $DSPACE_INSTALL/config/dspace_kaust.cfg
